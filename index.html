@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Acessível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Livraria Acessível</h1>
+        <div class="accessibility-toolbar">
+            <div class="size-controls">
+                <button id="decrease-size" aria-label="Diminuir tamanho do texto e imagens">A-</button>
+                <button id="reset-size" aria-label="Tamanho padrão do texto e imagens">A</button>
+                <button id="increase-size" aria-label="Aumentar tamanho do texto e imagens">A+</button>
+            </div>
+            <button id="toggle-contrast" aria-label="Alternar modo de alto contraste">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyLDJBMTAsMTAgMCAwLDAgMTIsMjJBMTAsMTAgMCAwLDAgMTIsMk0xMiw0QTgsOCAwIDAsMSAxMiwyMEE4LDggMCAwLDEgMTIsNFoiLz48L3N2Zz4=" alt="Ícone de contraste">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="book-categories">
+            <h2>Categorias</h2>
+            <nav aria-label="Navegação por categorias de livros">
+                <ul>
+                    <li><a href="#ficcao">Ficção</a></li>
+                    <li><a href="#nao-ficcao">Não-Ficção</a></li>
+                    <li><a href="#infantil">Infantil</a></li>
+                    <li><a href="#didaticos">Didáticos</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="featured-books">
+            <h2>Livros em Destaque</h2>
+            <div class="book-grid">
+                <article class="book-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuTMAQQDDjSbfPUA0XBzAA2S4aXBHbqt387g&s" alt="Capa do livro A Revolução dos Bichos" class="book-cover">
+                    <h3>A Revolução dos Bichos</h3>
+                    <p class="book-author">George Orwell</p>
+                    <p class="book-price">R$ 29,90</p>
+                    <button class="buy-button" aria-label="Comprar A Revolução dos Bichos">Comprar</button>
+                </article>
+
+                <article class="book-card">
+                    <img src="https://cdn.dooca.store/81243/products/vhlwm8cnd3pypyprlkscuqkm5ptcikwgu0kt.jpg?v=1681303516" alt="Capa do livro O Pequeno Príncipe" class="book-cover">
+                    <h3>O Pequeno Príncipe</h3>
+                    <p class="book-author">Antoine de Saint-Exupéry</p>
+                    <p class="book-price">R$ 24,50</p>
+                    <button class="buy-button" aria-label="Comprar O Pequeno Príncipe">Comprar</button>
+                </article>
+
+                <article class="book-card">
+                    <img src="https://cirandacultural.fbitsstatic.net/img/p/1984-70665/257179.jpg?w=520&h=520&v=no-change&qs=ignore" alt="Capa do livro 1984" class="book-cover">
+                    <h3>1984</h3>
+                    <p class="book-author">George Orwell</p>
+                    <p class="book-price">R$ 34,90</p>
+                    <button class="buy-button" aria-label="Comprar 1984">Comprar</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="special-offers">
+            <h2>Ofertas Especiais</h2>
+            <div class="offer-card">
+                <img src="https://images.unsplash.com/photo-1600189261867-8e3a5a2a0c4a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Coleção de livros em promoção" class="offer-image">
+                <div class="offer-details">
+                    <h3>Coleção Clássicos da Literatura</h3>
+                    <p class="offer-description">10 livros essenciais por apenas R$ 199,90 (economize R$ 100)</p>
+                    <button class="offer-button" aria-label="Comprar Coleção Clássicos da Literatura">Aproveitar Oferta</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <section class="contact-info">
+                <h3>Contato</h3>
+                <p>Email: contato@livrariaacessivel.com.br</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </section>
+            <section class="accessibility-statement">
+                <h3>Acessibilidade</h3>
+                <p>Nosso compromisso é tornar a leitura acessível a todos.</p>
+            </section>
+        </div>
+        <p class="copyright">&copy; 2023 Livraria Acessível. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
